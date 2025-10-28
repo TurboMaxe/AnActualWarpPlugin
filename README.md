@@ -1,7 +1,7 @@
 # AnActualWarpPlugin
 simple warp plugin
 
-VERSION: 1.20 \n
+VERSION: 1.20 <br />
 SOFTWARE: PAPER
 
 # Commands
