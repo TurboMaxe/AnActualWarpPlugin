@@ -3,8 +3,7 @@ version: 1.0
 main: me.turbo.random.anActualPlugin1.CommandHandler
 api-version: '1.20'
 author: TurboMaxe
-description: A simple plugin that logs player join IPs.
-
+description: Simple warp plugin with a few commands
 
 commands:
   warp:
