@@ -22,8 +22,8 @@ public class CommandHandler extends JavaPlugin {
 
         getCommand("warp").setExecutor(new Warp(this));
         getCommand("setwarp").setExecutor(new SetWarp(this));
-        getCommand("warps").setExecutor(new Warps());
-        getCommand("delwarp").setExecutor(new DelWarp());
+        getCommand("warps").setExecutor(new Warps(this));
+        getCommand("delwarp").setExecutor(new DelWarp(this));
 
         FileConfiguration config = this.getConfig();
     }
@@ -37,3 +37,4 @@ public class CommandHandler extends JavaPlugin {
 
     }
 }
+
