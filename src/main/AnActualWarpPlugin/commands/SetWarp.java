@@ -31,7 +31,6 @@ public class SetWarp implements CommandExecutor {
        
         if (args.length == 0) {
             player.sendMessage("§cProvide a warp name!");
-            player.openInventory(WarpInventory.inventory);
             return true;
         }
 
@@ -56,3 +55,4 @@ public class SetWarp implements CommandExecutor {
         return true;
     }
 }
+
