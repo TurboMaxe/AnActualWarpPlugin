@@ -10,10 +10,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class CommandHandler extends JavaPlugin {
 
     private static CommandHandler instance;
+    public static final String VERSION = "1.0.0"
 
     @Override
     public void onEnable() {
-
         instance = this;
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new EventListener(), this);
@@ -31,9 +31,10 @@ public class CommandHandler extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        getLogger().info("AnActualWarpPlugin (AAWP) Disabled!");
+        getLogger().info("AnActualWarpPlugin (AAWP) Disabled! Version:" + VERSION);
         saveDefaultConfig();
     }
 }
+
 
 
