@@ -9,7 +9,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class CommandHandler extends JavaPlugin {
 
-
     private static CommandHandler instance;
 
     @Override
@@ -19,7 +18,6 @@ public class CommandHandler extends JavaPlugin {
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new EventListener(), this);
         getLogger().info("Plugin enabled!");
-
         getCommand("warp").setExecutor(new Warp(this));
         getCommand("setwarp").setExecutor(new SetWarp(this));
         getCommand("warps").setExecutor(new Warps(this));
@@ -33,8 +31,9 @@ public class CommandHandler extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        getLogger().info("Plugin disabled!");
-
+        getLogger().info("AnActualWarpPlugin (AAWP) Disabled!");
+        saveDefaultConfig();
     }
 }
+
 
