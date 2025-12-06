@@ -7,4 +7,5 @@ SOFTWARE: PAPER
 # Commands
 - /setwarp 
 - /warps
-- /warp 
+- /warp
+- /delwarp
