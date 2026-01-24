@@ -76,7 +76,7 @@ public class Warp {
                             }
 
 
-                            sender.sendMessage(Component.text("Succesfully teleported you to warp: " + warpName).color(TextColor.color(0x1CEA14)));
+                            sender.sendMessage(Component.text("Succesfully teleported you to warp: '" + warpName + "'").color(TextColor.color(0x1CEA14)));
                             teleportPlayer(player, warpName);
                             return Command.SINGLE_SUCCESS;
                         })
@@ -85,4 +85,5 @@ public class Warp {
 
     }
 }
+
 
