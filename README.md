@@ -13,6 +13,8 @@ Commands:
 - aawp
 - version
 
+**# NOTE:** This saves the warps to config.yml, it is a lightweight plugin that has not implemented database support.
+
 # Dependencies:
 **Lombok,**
 **FastInv,**
@@ -29,4 +31,4 @@ and build:
 gradlew build
 ```
 
-Or, for non-technical users, use the latest version at [releases](https://github.com/TurboMaxe/AnActualWarpPlugin2/releases/latest])
+Or, for non-technical users, use the latest version at [releases](https://github.com/TurboMaxe/AnActualWarpPlugin/releases/latest])
