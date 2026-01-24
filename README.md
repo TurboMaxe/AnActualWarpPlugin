@@ -18,3 +18,15 @@ Commands:
 **FastInv,**
 **Paper,** (obviously)
  
+# Getting Started
+
+To compile it yourself, clone this repository, like so:
+```sh
+$ git clone https://github.com/TurboMaxe/AnActualWarpPlugin2
+```
+and build:
+```gradle
+gradlew build
+```
+
+Or, for non-technical users, use the latest version at [releases](https://github.com/TurboMaxe/AnActualWarpPlugin2/releases/latest])
