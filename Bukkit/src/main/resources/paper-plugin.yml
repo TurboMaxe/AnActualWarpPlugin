@@ -18,7 +18,7 @@ permissions:
   AAWP.aawp:
     description: "Fetches information about the plugin."
     default: op
-  AAWP.version:
+   AAWP.version:
     description: "Allows players to see what version of AAWP is running."
     default: op
   AAWP.reloadconfig:
@@ -26,5 +26,11 @@ permissions:
     default: op
   AAWP.delwarp:
     description: "Deletes a specific warp."
+    default: op
+  AAWP.warps:
+    description: "Returns a list of all warps."
+    default: op
+  AAWP.help:
+    description: "Lists the commands."
     default: op
 
