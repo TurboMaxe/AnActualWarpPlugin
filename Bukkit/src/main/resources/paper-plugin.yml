@@ -1,4 +1,4 @@
-name: AAWP1.1
+name: AAWP
 version: '${version}'
 main: io.turbo.random.aawp1.AAWP
 api-version: '1.21'
