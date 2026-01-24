@@ -14,7 +14,7 @@ Commands:
 - version
 
 # Dependencies:
-**Lombok**
-**FastInv**
-**Paper** (obviously)
+**Lombok,**
+**FastInv,**
+**Paper,** (obviously)
  
