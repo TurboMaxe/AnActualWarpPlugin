@@ -21,6 +21,12 @@ public class Warps {
                       return Command.SINGLE_SUCCESS;
                     }
 
+                    if(!(ctx.getSource().getSender().hasPermission("AAWP.warps"))) {
+                        ctx.getSource().getSender().sendMessage(Component.text("You are not allowed to use this command!").color(TextColor.color(0xB8181C)));
+                        return Command.SINGLE_SUCCESS;
+                    }
+
+
                     FileConfiguration config = AAWP.getInstance().getConfig();
                     Set<String> warpNames = config.getConfigurationSection("warps").getKeys(false);
 
@@ -35,3 +41,4 @@ public class Warps {
 
     }
 }
+
