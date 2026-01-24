@@ -64,7 +64,7 @@ public class SetWarp {
                                 throw new RuntimeException(e);
                             }
 
-                            sender.sendMessage(Component.text("Successfully made warp " + warpName).color(TextColor.color(0x1FD51C)));
+                            sender.sendMessage(Component.text("Successfully made warp '" + warpName + "'").color(TextColor.color(0x1FD51C)));
                             AAWP.getInstance().saveConfig();
                             return Command.SINGLE_SUCCESS;
                         })
@@ -72,4 +72,5 @@ public class SetWarp {
                   .build();
               }
     }
+
 
