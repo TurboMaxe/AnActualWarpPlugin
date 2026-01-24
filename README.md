@@ -12,3 +12,9 @@ Commands:
 - reloadconfig
 - aawp
 - version
+
+# Dependencies:
+**Lombok**
+**FastInv**
+**Paper** (obviously)
+ 
