@@ -24,7 +24,6 @@ public final class AAWP extends JavaPlugin implements Listener {
         @Override
         public void onEnable() {
             instance = this;
-            saveDefaultConfig();
             getLogger().info("Plugin enabled!");
             Bukkit.getPluginManager().registerEvents(this, this);
             this.getLifecycleManager().registerEventHandler(LifecycleEvents.COMMANDS, commands -> {
