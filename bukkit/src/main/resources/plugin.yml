@@ -1,0 +1,24 @@
+name: AnActualPlugin1
+version: 1.0
+main: me.turbo.random.anActualPlugin1.CommandHandler
+api-version: '1.20'
+author: TurboMaxe
+description: Simple warp plugin with a few commands
+
+commands:
+  warp:
+    description: Warps you to places
+    usage: /warp <arg1>
+    permission: anactualplugin.warp
+  setwarp:
+    description: Sets a warp at your location!
+    usage: /setwarp <arg1>
+    permission: anactualplugin.warp.setwarp
+  warps:
+    description: Lists all warps.
+    usage: /warps
+    permission: anactualplugin.warp.warplist
+  delwarp:
+    description: Deletes designated warp
+    usage: /delwarp <arg1>
+    permission: anactualplugin.warp.setwarp.deletewarp
