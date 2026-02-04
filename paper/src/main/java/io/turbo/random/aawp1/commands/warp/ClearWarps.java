@@ -49,11 +49,11 @@ public class ClearWarps {
                                 );
                             }
 
-
-                            AAWP.getInstance().getConfig().createSection("warps");
+              
                             return Command.SINGLE_SUCCESS;
                         })
                 .build();
 
     }
 }
+
