@@ -19,11 +19,7 @@ public class Warp implements CommandExecutor {
     public Warp(CommandHandler plugin) {
         this.plugin = plugin;
     }
-
-    public void open(Player player) {
-        player.openInventory(WarpInventory.inventory);
-    }
-
+  
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command,
                              @NotNull String label, @NotNull String[] args) {
@@ -71,3 +67,4 @@ public class Warp implements CommandExecutor {
         return true;
     }
 }
+
