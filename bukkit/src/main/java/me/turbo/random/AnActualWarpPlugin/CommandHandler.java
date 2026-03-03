@@ -4,6 +4,8 @@ import me.turbo.random.anActualPlugin1.commands.DelWarp;
 import me.turbo.random.anActualPlugin1.commands.SetWarp;
 import me.turbo.random.anActualPlugin1.commands.Warp;
 import lombok.Getter;
+import org.bukkit.Bukkit;
+
 import me.turbo.random.anActualPlugin1.commands.Warps;
 
 import org.bukkit.plugin.java.JavaPlugin;
@@ -16,7 +18,7 @@ public class CommandHandler extends JavaPlugin {
         instance = this;
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new EventListener(), this);
-        getLogger().info("AAWP enabled!");
+        Bukkit.getLogger().info("AAWP enabled!");
 
         getCommand("warp").setExecutor(new Warp(this));
         getCommand("setwarp").setExecutor(new SetWarp(this));
@@ -27,8 +29,9 @@ public class CommandHandler extends JavaPlugin {
     
     @Override
     public void onDisable() {
-        getLogger().info("AAWP disabled!");
+        Bukkit.getLogger().info("AAWP disabled!");
 
     }
 }
+
 
