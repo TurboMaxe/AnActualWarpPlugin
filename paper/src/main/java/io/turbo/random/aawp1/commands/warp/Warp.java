@@ -15,6 +15,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
 
 /**
 * author@TurboMaxe
@@ -31,7 +32,7 @@ public class Warp {
      * @param warpName the name of the warp, the identifier used to teleport the player
      */
 
-    public static void teleportPlayer(Player player, String warpName ) {
+    public static void teleportPlayer(@NotNull Player player, @NotNull String warpName ) {
 
         FileConfiguration config = AAWP.getInstance().getConfig();
 
@@ -54,7 +55,6 @@ public class Warp {
         return Commands.literal("warp")
                 .then(Commands.argument("warpName", StringArgumentType.word())
                         .executes(ctx -> {
-
                             CommandSender sender = ctx.getSource().getSender();
                             Entity executor = ctx.getSource().getExecutor();
                             String warpName = ctx.getArgument("warpName", String.class);
@@ -66,23 +66,21 @@ public class Warp {
                             }
 
                             if (!(config.contains("warps." + warpName))) {
-                                sender.sendMessage(Component.text("This warp does not exist!").color(TextColor.color(0xB8181C)));
+                                sender.sendMessage(Component.text("Warp " + warpName + " does not exist!").color(TextColor.color(0xB8181C)));
                                 return Command.SINGLE_SUCCESS;
                             }
-                            if(!(sender.hasPermission("AAWP.warp"))) {
-
+                            if (!(sender.hasPermission("AAWP.warp"))) {
                                 sender.sendMessage(Component.text("You are not allowed to use this command!").color(TextColor.color(0xB8181C)));
                                 return Command.SINGLE_SUCCESS;
                             }
 
-
                             sender.sendMessage(Component.text("Succesfully teleported you to warp: " + warpName).color(TextColor.color(0x1CEA14)));
                             teleportPlayer(player, warpName);
                             return Command.SINGLE_SUCCESS;
-                        })
-                )
+                        }))
         .build();
 
     }
 }
+
 
