@@ -9,16 +9,17 @@ commands:
   warp:
     description: Warps you to places
     usage: /warp <arg1>
-    permission: anactualplugin.warp
+    permission: aawp.warp
   setwarp:
     description: Sets a warp at your location!
     usage: /setwarp <arg1>
-    permission: anactualplugin.warp.setwarp
+    permission: aawp.setwarp
   warps:
     description: Lists all warps.
     usage: /warps
-    permission: anactualplugin.warp.warplist
+    permission: aawp.warplist
   delwarp:
     description: Deletes designated warp
     usage: /delwarp <arg1>
-    permission: anactualplugin.warp.setwarp.deletewarp
+    permission: aawp.deletewarp
+
