@@ -11,9 +11,13 @@ Commands:
 - help
 - reloadconfig
 - aawp
-- version
+- version<br>
 
-**# NOTE:** This saves the warps to config.yml, it is a lightweight plugin that has not implemented database support.
+> [!NOTE]
+> This saves the warps to config.yml, it is a lightweight plugin<br>
+> that has not implemented database support.<br>
+<br>
+TODO: Migrate from YAML to storing warps in SQLite db
 
 # Dependencies:
 **Lombok,**
