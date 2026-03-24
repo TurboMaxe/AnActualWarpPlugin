@@ -1,1 +1,2 @@
-rootProject.name = "AAWP1.1"
+rootProject.name = "AnActualWarpPlugin"
+include("bukkit", "paper")
